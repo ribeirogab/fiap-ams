@@ -21,8 +21,8 @@ Este é um sistema de gestão agrícola que ajuda a gerenciar dados relacionados
 1. Clone o repositório ou baixe o código-fonte.
 
    ```bash
-   git clone https://github.com/seu-usuario/sistema-gestao-agricola.git
-   cd sistema-gestao-agricola
+   git clone git@github.com:ribeirogab/fiap-ams.git
+   cd fiap-ams
    ```
 
 2. Verifique se o Python está instalado. Você pode verificar com o comando:
