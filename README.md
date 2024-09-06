@@ -39,7 +39,7 @@ Este é um sistema de gestão agrícola que ajuda a gerenciar dados relacionados
 2. Execute o script:
 
    ```bash
-   python main2.py
+   python main.py
    ```
 
 3. A janela da aplicação será aberta, permitindo que você interaja com o sistema.
