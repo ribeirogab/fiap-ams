@@ -1,7 +1,6 @@
 data.csv
 .DS_Store
 tmp
-renv
 .env
 *.Rproj.user
 .Rhistory
