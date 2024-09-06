@@ -3,8 +3,8 @@
 Este é um sistema de gestão agrícola que ajuda a gerenciar dados relacionados a diferentes culturas, calcular a área de plantio e estimar os insumos necessários (por exemplo, fertilizantes, pesticidas) com base no tipo de cultura e na área plantada. A aplicação usa Python e Tkinter para fornecer uma interface gráfica simples que permite aos usuários inserir, atualizar, deletar e visualizar e analisar (com a linguagem R) os dados das culturas.
 
 ## Funcionalidades
-- Adicionar novos dados de cu
-ltura selecionando o tipo de cultura, inserindo as dimensões (comprimento e largura) e calculando automaticamente a área de plantio e os insumos necessários.
+
+- Adicionar novos dados de cultura selecionando o tipo de cultura, inserindo as dimensões (comprimento e largura) e calculando automaticamente a área de plantio e os insumos necessários.
 - Atualizar dados de cultura existentes selecionando uma linha na tabela e modificando os valores.
 - Deletar culturas selecionadas da tabela.
 - Carregar e salvar dados de culturas de/para um arquivo CSV (`data.csv`).
@@ -25,7 +25,7 @@ ltura selecionando o tipo de cultura, inserindo as dimensões (comprimento e lar
 
    ```bash
    git clone git@github.com:ribeirogab/fiap-ams.git
-   cd iap-ams
+   cd fiap-ams
    ```
 
 2. Verifique se o Python está instalado. Você pode verificar com o comando:
@@ -65,18 +65,18 @@ ltura selecionando o tipo de cultura, inserindo as dimensões (comprimento e lar
 
 1. **Adicionar Dados**:
    - Selecione uma cultura no menu suspenso.
-   - Insira os valores de `Comprimento` e `Largura` (ambos devem ser numéricos).
-   - Clique em **Adicionar Dados** para calcular a área e os insumos necessários para aquela cultura.
+   - Insira os valores de `Length` e `Width` (ambos devem ser numéricos).
+   - Clique em **Add Data** para calcular a área e os insumos necessários para aquela cultura.
    - Os dados serão exibidos na tabela e salvos no arquivo `data.csv`.
 
 2. **Atualizar Dados**:
    - Selecione uma linha na tabela.
-   - Clique em **Atualizar** para modificar a cultura, o comprimento e a largura.
+   - Clique em **Update** para modificar a cultura, o comprimento e a largura.
    - Os dados atualizados serão refletidos na tabela e salvos no arquivo `data.csv`.
 
 3. **Deletar Dados**:
    - Selecione uma ou mais linhas na tabela.
-   - Clique em **Deletar Selecionados** para remover as entradas.
+   - Clique em **Delete Selected** para remover as entradas.
    - Os dados serão atualizados na tabela e salvos no arquivo `data.csv`.
 
 4. **Analisar Dados**:
