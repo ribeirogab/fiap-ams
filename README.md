@@ -45,7 +45,7 @@ Este é um sistema de gestão agrícola que ajuda a gerenciar dados relacionados
 
 4. Execute o script Python e gere o arquivo `data.csv`.
 
-5. Adicione sua chave de API do OpenWeather a uma variável de ambiente chamada `API_KEY`.
+5. Previsão do tempo: Crie um arquivo `.env` com sua chave de API do OpenWeather, seguindo o exemplo do arquivo `.env.example`.
 
 ## Como Executar
 
