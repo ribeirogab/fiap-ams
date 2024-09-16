@@ -11,6 +11,11 @@ Este é um sistema de gestão agrícola que ajuda a gerenciar dados relacionados
 - **Consultar previsão do tempo** para uma cidade específica utilizando a API OpenWeather.
 - Analisar os dados de plantio e insumos usando uma aplicação em R que calcula estatísticas básicas, como média e desvio padrão, e gera visualizações gráficas.
 
+## Demonstração
+
+Assista ao vídeo no YouTube que mostra todas as funcionalidades do sistema:  
+[FIAP - Farm Tech Solutions - Demonstração](https://youtu.be/TA8ZpcP39e0)
+
 ## Tecnologias
 
 - **Python 3.x**
