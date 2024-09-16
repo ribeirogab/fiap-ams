@@ -8,6 +8,7 @@ Este é um sistema de gestão agrícola que ajuda a gerenciar dados relacionados
 - Atualizar dados de cultura existentes selecionando uma linha na tabela e modificando os valores.
 - Deletar culturas selecionadas da tabela.
 - Carregar e salvar dados de culturas de/para um arquivo CSV (`data.csv`).
+- **Consultar previsão do tempo** para uma cidade específica utilizando a API OpenWeather.
 - Analisar os dados de plantio e insumos usando uma aplicação em R que calcula estatísticas básicas, como média e desvio padrão, e gera visualizações gráficas.
 
 ## Tecnologias
@@ -18,14 +19,16 @@ Este é um sistema de gestão agrícola que ajuda a gerenciar dados relacionados
 - **R** para análise estatística e visualizações
   - **dplyr** para manipulação de dados
   - **ggplot2** para visualizações gráficas
+  - **httr** e **jsonlite** para consultar a previsão do tempo
+- **OpenWeather API** para dados meteorológicos
 
 ## Instalação
 
 1. Clone o repositório ou baixe o código-fonte.
 
    ```bash
-   git clone git@github.com:ribeirogab/fiap-ams.git
-   cd fiap-ams
+   git clone git@github.com:ribeirogab/fiap-farm-tech-solutions.git
+   cd fiap-farm-tech-solutions
    ```
 
 2. Verifique se o Python está instalado. Você pode verificar com o comando:
@@ -41,6 +44,8 @@ Este é um sistema de gestão agrícola que ajuda a gerenciar dados relacionados
    ```
 
 4. Execute o script Python e gere o arquivo `data.csv`.
+
+5. Adicione sua chave de API do OpenWeather a uma variável de ambiente chamada `API_KEY`.
 
 ## Como Executar
 
@@ -60,6 +65,15 @@ Este é um sistema de gestão agrícola que ajuda a gerenciar dados relacionados
      ```
 
    - O script R irá calcular a média e o desvio padrão das colunas **Área** e **Insumos**, além de gerar gráficos (histograma e boxplot) e realizar uma análise de outliers.
+
+3. **Consulta de Previsão do Tempo**:
+   - No terminal, forneça o nome da cidade como argumento ao executar o script R:
+
+     ```bash
+     Rscript weather.r "São Paulo"
+     ```
+
+   - O script retornará informações como a temperatura atual, condições climáticas, umidade e velocidade do vento da cidade especificada.
 
 ## Como Usar
 
@@ -81,3 +95,6 @@ Este é um sistema de gestão agrícola que ajuda a gerenciar dados relacionados
 
 4. **Analisar Dados**:
    - Execute o script R `data_analysis.r` para calcular estatísticas básicas e gerar gráficos de análise dos dados de plantio e insumos.
+
+5. **Consultar Previsão do Tempo**:
+   - Execute o script `weather.r` para consultar a previsão do tempo para uma cidade específica, utilizando a API do OpenWeather.
