@@ -201,7 +201,7 @@ def validate_numeric_input(value):
 
 # GUI setup
 root = tk.Tk()
-root.title("Agricultural Management System")
+root.title("FIAP - Farm Tech Solutions")
 root.geometry("1300x790")
 
 # Centralize the window on screen
