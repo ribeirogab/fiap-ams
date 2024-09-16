@@ -23,6 +23,7 @@ cat("Mean of Inputs Needed:", mean_input, "\n")
 cat("Standard Deviation of Inputs Needed:", sd_input, "\n")
 
 # Visualizations: Adjusted Histogram of Planting Area with appropriate binwidth
+png("histogram_area.png")
 ggplot(data, aes(x = Area)) +
   geom_histogram(
     binwidth = max(data$Area) / 30,
@@ -33,6 +34,7 @@ ggplot(data, aes(x = Area)) +
   labs(title = "Distribution of Planting Area", x = "Area", y = "Frequency")
 
 # Visualizations: Boxplot of Inputs Needed
+png("boxplot_inputs_needed.png")
 ggplot(data, aes(x = "", y = Input.Needed)) +
   geom_boxplot(fill = "green", color = "black", alpha = 0.7) +
   labs(title = "Boxplot of Inputs Needed", y = "Inputs (mL/kg)")
