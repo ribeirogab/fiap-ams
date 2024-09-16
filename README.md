@@ -1,4 +1,4 @@
-# Agricultural Management System
+# FIAP - Farm Tech Solutions
 
 Este é um sistema de gestão agrícola que ajuda a gerenciar dados relacionados a diferentes culturas, calcular a área de plantio e estimar os insumos necessários (por exemplo, fertilizantes, pesticidas) com base no tipo de cultura e na área plantada. A aplicação usa Python e Tkinter para fornecer uma interface gráfica simples que permite aos usuários inserir, atualizar, deletar e visualizar e analisar (com a linguagem R) os dados das culturas.
 
