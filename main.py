@@ -5,7 +5,7 @@ import csv
 import os
 
 # Predefined crops
-valid_crops = ["Corn", "Coffee", "Wheat", "Soybean"]
+valid_crops = ["Corn", "Coffee"]
 
 # Vectors (lists) to store data
 crops = []
@@ -47,10 +47,6 @@ def calculate_inputs(crop, area):
         return area * 200  # Example: 200kg/ha for Corn
     elif crop == "Coffee":
         return area * 0.5  # Example: 500mL/m² for Coffee
-    elif crop == "Wheat":
-        return area * 150  # Example: 150kg/ha for Wheat
-    elif crop == "Soybean":
-        return area * 180  # Example: 180kg/ha for Soybean
 
 
 # GUI Functions
@@ -71,7 +67,7 @@ def enter_data():
 
     area = (
         calculate_rectangle_area(length, width)
-        if crop in ["Corn", "Wheat", "Soybean"]
+        if crop in ["Corn"]
         else calculate_circle_area(length)
     )
     input_needed = calculate_inputs(crop, area)
@@ -174,14 +170,17 @@ def open_update_modal():
                 new_length = float(length_entry.get())
                 new_width = float(width_entry.get())
 
-                # Calculate the new area based on length and width
-                new_area = calculate_rectangle_area(new_length, new_width)
-                new_input = calculate_inputs(new_crop, new_area)
+                new_area = (
+                    calculate_rectangle_area(new_length, new_width)
+                    if new_crop in ["Corn"]
+                    else calculate_circle_area(new_length)
+                )
+                new_input_needed = calculate_inputs(new_crop, new_area)
 
                 # Update the lists with the new values
                 crops[index] = new_crop
                 areas[index] = new_area
-                inputs[index] = new_input
+                inputs[index] = new_input_needed
 
                 save_to_csv()
                 update_table()
